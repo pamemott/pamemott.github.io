@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pamela Motter - FullStack Dev</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="pink accent-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">PM</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="idiomas.html">Idiomas</a></li>
+        <li><a href="trabajos-desarrollados.html">Trabajos Desarrollados</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="idiomas.html">Idiomas</a></li>
+        <li><a href="trabajos-desarrollados.html">Trabajos Desarrollados</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 hide-on-med-and-up">
+          <h1 class="header center">Idiomas</h1>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Italiano - Nivel Avanzado</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Inglés Técnico</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Portugués nivel básico</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col m10 hide-on-small-only hide-on-large-only offset-m1">
+          <h1 class="header center">Idiomas</h1>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Italiano - Nivel Avanzado</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Inglés Técnico</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Portugués nivel básico</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col l8 hide-on-med-and-down offset-l2">
+          <h1 class="header center">Idiomas</h1>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Italiano - Nivel Avanzado</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Inglés Técnico</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">spellcheck</i>Portugués nivel básico</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l5 s12">
+          <h6 class="header white-text">Si puedes imaginarlo, puedes alcanzarlo.<br>Si puedes soñarlo, puedes hacerlo.
+          </h6>
+          <p class="header white-text">William Arthur Ward</p>
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="index.html">Inicio</a></li>
+            <li><a class="white-text" href="capacitaciones.html">Capacitaciones</a></li>
+            <li><a class="white-text" href="idiomas.html">Idiomas</a></li>
+          </ul>
+        </div>
+        <div class="col l4 s12">
+          <ul>
+            <li><a class="white-text" href="trabajos-desarrollados.html">Trabajos Desarrollados</a></li>
+            <li><a class="white-text" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="white-text center"> Made by <a class="grey-text text-darken-4" href="#">Pamela Motter</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slider();
+    });
+  </script>
+  <script>
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
+
+</body>
+
+</html>

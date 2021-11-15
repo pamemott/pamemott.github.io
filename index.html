@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pamela Motter - FullStack Dev</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="pink accent-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">PM</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="idiomas.html">Idiomas</a></li>
+        <li><a href="trabajos-desarrollados.html">Trabajos Desarrollados</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="idiomas.html">Idiomas</a></li>
+        <li><a href="trabajos-desarrollados.html">Trabajos Desarrollados</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <div class="col s12 m6 l3">
+            <img src="pamela-motter.jpg" alt="" class="circle responsive-img z-depth-2">
+            <h5 class="header center white-text">Pamela Motter</h5>
+            <p class="header center white-text">No bajes la meta. Aumenta el esfuerzo.</p>
+          </div>
+          <div class="col m5 l8 offset-m1 offset-l1">
+            <h3 class="header center white-text">Pamela Motter</h3>
+            <h5 class="header center white-text">FullStack Developer</h5>
+            <p class="flow-text white-text center">Bienvenidos a mi Porfolio, mi nombre es Pamela Soledad Motter, soy de
+              Fontana Provincia del Chaco.
+              <br>
+              Soy Analista en Sistemas de Información recibida en la UTN FRRe en el
+              2016, También FullStack Developer y actualmente estoy en las últimas materias de la Carrera Ingeniería en
+              Sistemas de Información.
+              <br>
+              Desde el año 2009 trabajo en la Municipalidad de Fontana, y desde el
+              año 2017 soy Jefe del Área de Sistemas.
+              <br>
+              Soy proactiva, autodidacta, motivadora, me gusta trabajar y ser parte
+              de grupos de Proyecto, y sobre todo seguir aprendiendo. </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background.jpg" alt=""></div>
+  </div>
+
+
+  <footer class="page-footer grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l5 s12">
+          <h6 class="header white-text">Si puedes imaginarlo, puedes alcanzarlo.<br>Si puedes soñarlo, puedes hacerlo.
+          </h6>
+          <p class="header white-text">William Arthur Ward</p>
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="index.html">Inicio</a></li>
+            <li><a class="white-text" href="capacitaciones.html">Capacitaciones</a></li>
+            <li><a class="white-text" href="idiomas.html">Idiomas</a></li>
+          </ul>
+        </div>
+        <div class="col l4 s12">
+          <ul>
+            <li><a class="white-text" href="trabajos-desarrollados.html">Trabajos Desarrollados</a></li>
+            <li><a class="white-text" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="white-text center"> Made by <a class="grey-text text-darken-4" href="#">Pamela Motter</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slider();
+    });
+  </script>
+  <script>
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
+
+</body>
+
+</html>
